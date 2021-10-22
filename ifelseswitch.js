@@ -112,6 +112,7 @@ else if (num % 3 == 0){
 // let num2 = 7;
 // let sum = num1 + num2;
 
+/*number is even log number is odd * together*/
 // if (sum % 2 == 0){
 //   console.log(`The sum = ${sum} and is even.`)
 // } else {

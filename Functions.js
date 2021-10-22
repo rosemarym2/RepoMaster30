@@ -1,16 +1,16 @@
 /*Task 1 Cinema Ticket*/
 
-let age = 60;
+// let age = 60;
 
-if (age < 18){
-    console.log("£8");
-} else if (age < 60){
-    console.log("£10.95");
-} else if (age > 59){
-    console.log("£7.50");
-} else {
-    console.log("£7.50");
-};
+// if (age < 18){
+//     console.log("£8");
+// } else if (age < 60){
+//     console.log("£10.95");
+// } else if (age > 59){
+//     console.log("£7.50");
+// } else {
+//     console.log("£7.50");
+// };
 
 
 // let ticketPrices = [
@@ -68,8 +68,6 @@ if (age < 18){
 // let balance = 300
 // let currency = `£`
 
-
-
 // cashWithdrawal (300, accNumber);
 // cashWithdrawal (360, 50449921);
 // cashWithdrawal (30, 50447921);
@@ -78,17 +76,18 @@ if (age < 18){
 //     return num1 + num2;
 //     }
     
-//     addUp(7,3);
+//     console.log(currency)
 //     console.log(addUp(2,5));
 
-// const cashWithdrawal = (amount, accNum) => {
-//     if ((pinNum == 1234 && balance => amount)) {
-//     return staus:`Withdrawing ${amount} from account ${accNum}`
+// const atmWithdraw = (amount, accNum) => {
+//     if ((pinNum == 1234 && balance >= amount)) {
+//     return staus`Withdrawing ${amount} from account ${accNum}`
 // } else if (pin!= 1234) {
-//   return status:`Wrong PIN entered, please try again`
+//   return status `Wrong PIN entered, please try again`
 // } else if (balance > amount) {
-    // return status:`${accNum} has insufficient funds`
+//     return status `${accNum} has insufficient funds`
 // }
+// };
 
 
 // const person = {
