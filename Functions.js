@@ -1,14 +1,16 @@
 /*Task 1 Cinema Ticket*/
 
-// let age = 15;
+let age = 60;
 
-// if (age > 18){
-//     console.log ("£8");
-// } else if (age > 18) {
-//     console.log ("£10.95")
-// } else if (age >= 60) {
-//     console.log ("£7.50")
-// };
+if (age < 18){
+    console.log("£8");
+} else if (age < 60){
+    console.log("£10.95");
+} else if (age > 59){
+    console.log("£7.50");
+} else {
+    console.log("£7.50");
+};
 
 
 // let ticketPrices = [

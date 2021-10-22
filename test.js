@@ -42,3 +42,13 @@ if (num == reverseStringNum) {
 //     }
 //     }
 //     console.log(cafe.openCafe());
+
+// let age = 15;
+
+// if (age <18){
+//     console.log("£8")
+// } else if (age >18){
+//     console.log("£10.95")
+// } else if (age >=60){
+//     console.log("£7.50")
+// };
