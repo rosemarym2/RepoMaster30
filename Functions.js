@@ -100,7 +100,6 @@
 //     ]
 // };
 //  console.log(person.songs[0]);
-//  console.log(saysHi);
 
 //broken code below
 // sayHi(){
@@ -128,53 +127,72 @@
 /*Activity 1*/
 // const person = {
 //     name: `Rosie`,
-//     saysHi: true,
 //     age: 30,
 //     songs:[
 //         "Baba O'Riley",
 //         "MMMBop",
 //         "The Chain"
 //     ]
-// }; 
-// function saysHi(){
-//     return `Hello my name is ${this.name}`
+// }, 
+// sayHi = () => {
+//     return `Hello my name is ${person.name}`;
 // };
 
-// console.log(person[`name`]);
+// console.log(sayHi(person.name));
+
 
 /*Activity 2*/
-// const pet = {
-//     petName: `Jasper`,
-//     typeOfPet: `Dog`,
-//     age: 12,
-//     colour: `brown`,
-// }
-// console.log(pet['petName']);
+const pet = {
+    petName: `Jasper`,
+    typeOfPet: `Dog`,
+    age: 12,
+    colour: `brown`,
+}
+console.log(pet['petName']);
 
-// let activity = petName => {
-//     eat: `Your ${petName} is eating`;
-//     drinking: `Your ${petName} is drinking`;
-// }
+eat = () => {
+   return`Your pet ${pet.petName} is eating`;
+},
+drink = () => {
+   return`Your pet ${pet.petName} is drinking`;
+};
+
+console.log(eat());
+console.log(drink());
 
 /*Activity 3 cafe*/
 // const coffeeShop = {
 //     branch: `200 Degrees Nottingham`,
 //     currency: `£`,
 //     drinks:[
-//         [`Americano`, 2.30],
-//         [`Espresso`, 2.25],
-//         [`Latte`, 2.40],
-//         [`Flat White`, 2.35],
-//         [`Hot Chocolate`, 3.00],
+//         [`Americano`, `Espresso`, `Latte`, `Flat White`, `Hot Chocolate`],
+//         [2.25, 2.40, 2.35, 3.00],
 //     ],
 //     food: [
-//         [`Chicken Salad`, 4.50],
-//         [`Cheese and Tomato Sandwich`, 4.55],
-//         [`Croissant`, 1.20],
-//         [`BLT sandwich`, 4.95],
-//         [`Cake Slice`, 3.50],
+//         [`Chicken Salad`, `Cheese and Tomato Sandwich`, `Croissant`, `BLT sandwich`, `Cake Slice`] 
+//         [4.50, 4.55, 1.20, 4.95, 3.50],
 //     ],
 // },
+
+// function totalOrder(){
+//     return console.log (`Your order is ${this.food[0].currency[0].toFixed(2)}`);
+// }
+// coffeeShop.totalOrder()
+
+/*Price List
+drinks:
+    Americano - £2.30
+    Espresso - £2.25
+    Latte - £2.40
+    Flat White - £2.35
+    Hot Chocolate - £3.00
+food: 
+    Chicken Salad - £4.50
+    Cheese and Tomato Sandwich - £4.55
+    Croissant - £1.20
+    BLT sandwich - £4.95
+    Cake Slice - £3.50
+],*/
 
 // for (let i = 0; i < coffeeShop.length; i++){
 //             console.log(coffeeShop[i])     
@@ -186,8 +204,9 @@
 // }
 
 // function totalOrder(){
+//     return console.log (`Your order is ${this.food[0].currency[0]}`);
+// }
+// coffeeShop.totalOrdered()
 // coffeeShop(this.drinks),
 // coffeeShop(this.food),
-// },
-
 // console.log(coffeeShop.drinks[0][1]);

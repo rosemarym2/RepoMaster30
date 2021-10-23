@@ -52,3 +52,4 @@ if (num == reverseStringNum) {
 // } else if (age >=60){
 //     console.log("£7.50")
 // };
+
