@@ -60,34 +60,39 @@
 // takeOrder("mushrooms", "peppers");
 // takeOrder("chicken", "extra cheese");
 
-/*Activity 3 Cash Machine*/
-/*Dispenses cash if your pin number is correct and your balance is equal to, or more than, the amount you're trying to withdraw!*/
+/*Activity 3 Cash Machine
+Dispenses cash if your pin number is correct and your balance is equal to, or more than, the amount you're trying to withdraw!*/
 
-// let accNumber = 24601911
-// let pinNum = 1234
-// let balance = 300
-// let currency = `£`
+let accNumber = 24601911;
+let pinNum = 1234;
+let balance = 0;
+let currency = `£`;
 
-// cashWithdrawal (300, accNumber);
-// cashWithdrawal (360, 50449921);
-// cashWithdrawal (30, 50447921);
+const cashWithdrawal = (currentbal, accNum) => {
+console.log(`Your cash withdrawal of ${currency}${currentbal.toFixed(2)} for ${accNum} is being processed`);
+balance++;
+}
 
-// const addUp = (num1, num2) => {
-//     return num1 + num2;
-//     }
+cashWithdrawal (300, accNumber);
+cashWithdrawal (360, 50449921);
+cashWithdrawal (30, 50447921);
+
+addUp = (num1, num2) => {
+    return num1 + num2;
+    }
     
-//     console.log(currency)
-//     console.log(addUp(2,5));
+    console.log((currency));
+    console.log(addUp(2,5));
 
-// const atmWithdraw = (amount, accNum) => {
-//     if ((pinNum == 1234 && balance >= amount)) {
-//     return staus`Withdrawing ${amount} from account ${accNum}`
-// } else if (pin!= 1234) {
-//   return status `Wrong PIN entered, please try again`
-// } else if (balance > amount) {
-//     return status `${accNum} has insufficient funds`
-// }
-// };
+atmWithdraw = (amount, accNum) => {
+    if ((pinNum == 1234 && balance >= amount)) {
+    return staus`Withdrawing ${amount} from account ${accNum}`
+} else if (pin!= 1234) {
+  return status `Wrong PIN entered, please try again`
+} else if (balance > amount) {
+    return status `${accNum} has insufficient funds`
+}
+};
 
 
 // const person = {
@@ -142,23 +147,23 @@
 
 
 /*Activity 2*/
-const pet = {
-    petName: `Jasper`,
-    typeOfPet: `Dog`,
-    age: 12,
-    colour: `brown`,
-}
-console.log(pet['petName']);
+// const pet = {
+//     petName: `Jasper`,
+//     typeOfPet: `Dog`,
+//     age: 12,
+//     colour: `brown`,
+// }
+// console.log(pet['petName']);
 
-eat = () => {
-   return`Your pet ${pet.petName} is eating`;
-},
-drink = () => {
-   return`Your pet ${pet.petName} is drinking`;
-};
+// eat = () => {
+//    return`Your pet ${pet.petName} is eating`;
+// },
+// drink = () => {
+//    return`Your pet ${pet.petName} is drinking`;
+// };
 
-console.log(eat());
-console.log(drink());
+// console.log(eat());
+// console.log(drink());
 
 /*Activity 3 cafe*/
 // const coffeeShop = {
