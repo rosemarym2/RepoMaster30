@@ -106,12 +106,6 @@ const person = {
  console.log(person.songs[0]);
 
 
-sayHi(){
-    if (name) {
-        return `Hello my name is ${this.name}`;
-    }
-},
-    console.log(person.this.name());
 
 /*broken code alarm clock
 let day = 'Saturday';
