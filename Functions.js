@@ -177,20 +177,22 @@ const coffeeShop = {
     ],
 },
 
-for (let i = 0; i < drinks.length; i++){
-    for(let j = 0; j < this.food.length; j++){
-        if(food[i] === this.food[j]){
-            cost += this.food[j + 1]
-            order = order + ` = ${food[i]} £${this.food[j + 1]} = `
-        }    
-};
+// let order = '';
+// let cost = 0;
+// for (let i = 0; i < drinks.length; i++){
+//     for(let j = 0; j < this.food.length; j++){
+//         if(food[i] === this.food[j]){
+//             cost += this.food[j + 1]
+//             order = order + ` = ${food[i]} £${this.food[j + 1]} = `
+//         }    
+// };
 
-foodOrdered = () =>{
-        return console.log (`You ordered:${this.food[i][i]} and ${this.drinks[i][i]}. The cost for this order
-        will be ${this.food[i][i] + this.drinks[i][i]}`) 
-       }
+// foodOrdered = () =>{
+//         return console.log (`You ordered:${this.food[i][j]} and ${this.drinks[i][j]}. The cost for this order
+//         will be ${this.food[i][j] + this.drinks[i][j]}`) 
+//        }
     
-coffeeShop (foodOrdered());
+// coffeeShop (foodOrdered());
 
 
 
@@ -202,9 +204,9 @@ coffeeShop (foodOrdered());
 // };
 
 // totalOrder = () => {
-//     return console.log (`Your order is ${this.food[0].currency[0].toFixed(2)}`);
+//     return `Your order is ${this.food[i].currency[].toFixed(2)}`
 // }
-// coffeeShop.totalOrder()
+// console.log.coffeeShop(totalOrder())
 
 /*Price List
 drinks:
