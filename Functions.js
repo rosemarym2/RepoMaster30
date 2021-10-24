@@ -65,34 +65,32 @@ Dispenses cash if your pin number is correct and your balance is equal to, or mo
 
 let accNumber = 24601911;
 let pinNum = 1234;
-let balance = 0;
+let balance = 300;
 let currency = `£`;
+let total = 300;
 
-const cashWithdrawal = (currentbal, accNum) => {
-console.log(`Your cash withdrawal of ${currency}${currentbal.toFixed(2)} for ${accNum} is being processed`);
-balance++;
-}
+// const cashWithdrawal = (amount, accNum) => {
+// console.log(`Your cash withdrawal of ${currency}${amount.toFixed(2)} for ${accNum} is being processed`);
+// balance++;
+// }
 
-cashWithdrawal (300, accNumber);
-cashWithdrawal (360, 50449921);
-cashWithdrawal (30, 50447921);
+// cashWithdrawal (300, accNumber);
+// cashWithdrawal (360, 50449921);
+// cashWithdrawal (30, 50447921);
 
-addUp = (num1, num2) => {
-    return num1 + num2;
-    }
-    
-    console.log((currency));
-    console.log(addUp(2,5));
-
-atmWithdraw = (amount, accNum) => {
-    if ((pinNum == 1234 && balance >= amount)) {
-    return staus`Withdrawing ${amount} from account ${accNum}`
-} else if (pin!= 1234) {
-  return status `Wrong PIN entered, please try again`
-} else if (balance > amount) {
-    return status `${accNum} has insufficient funds`
+atmWithdraw = (atmAmount, accNum) => {
+    if (1234 == pinNum && total <= balance) {
+    return `Withdrawing ${currency}${total.toFixed(2)} from account ${accNumber}`;
+}  else if (1234 === pinNum && balance < total) {
+    return `${accNumber} has insufficient funds`; 
+} else if (1234 !== pinNum) {
+        return `Wrong PIN entered, please try again`;
+}else {
+    return `please try again`;
 }
 };
+
+console.log(atmWithdraw());
 
 
 // const person = {
@@ -106,7 +104,7 @@ atmWithdraw = (amount, accNum) => {
 // };
 //  console.log(person.songs[0]);
 
-//broken code below
+
 // sayHi(){
 //     if (name) {
 //         return `Hello my name is ${this.name}`;
@@ -114,22 +112,22 @@ atmWithdraw = (amount, accNum) => {
 // },
 //     console.log(person.this.name());
 
+/*broken code below
+let day = 'Saturday';
+let alarm = '';
 
-// let day = 'Saturday';
-// let alarm = '';
 
+let alarmMessage = {
+    weekendAlarm: 'no alarm needed',
+    weekdayAlarm: 'get up at 7am',
+};
 
-// let alarmMessage = {
-//     weekendAlarm: 'no alarm needed',
-//     weekdayAlarm: 'get up at 7am',
-// };
+if(day == 'Saturday'|| day == 'Sunday'){
+    alarm 
+}*/
 
-// if(day == 'Saturday'|| day == 'Sunday'){
-//     alarm 
-// }
-
-/*Objects*/
-/*Activity 1*/
+/*Objects
+Activity 1*/
 // const person = {
 //     name: `Rosie`,
 //     age: 30,
@@ -166,20 +164,44 @@ atmWithdraw = (amount, accNum) => {
 // console.log(drink());
 
 /*Activity 3 cafe*/
-// const coffeeShop = {
-//     branch: `200 Degrees Nottingham`,
-//     currency: `£`,
-//     drinks:[
-//         [`Americano`, `Espresso`, `Latte`, `Flat White`, `Hot Chocolate`],
-//         [2.25, 2.40, 2.35, 3.00],
-//     ],
-//     food: [
-//         [`Chicken Salad`, `Cheese and Tomato Sandwich`, `Croissant`, `BLT sandwich`, `Cake Slice`] 
-//         [4.50, 4.55, 1.20, 4.95, 3.50],
-//     ],
-// },
+const coffeeShop = {
+    branch: `200 Degrees Nottingham`,
+    currency: `£`,
+    drinks:[
+        [`Americano`, `Espresso`, `Latte`, `Flat White`, `Hot Chocolate`],
+        [2.25, 2.40, 2.35, 3.00],
+    ],
+    food: [
+        [`Chicken Salad`, `Cheese and Tomato Sandwich`, `Croissant`, `BLT sandwich`, `Cake Slice`] 
+        [4.50, 4.55, 1.20, 4.95, 3.50],
+    ],
+},
 
-// function totalOrder(){
+for (let i = 0; i < drinks.length; i++){
+    for(let j = 0; j < this.food.length; j++){
+        if(food[i] === this.food[j]){
+            cost += this.food[j + 1]
+            order = order + ` = ${food[i]} £${this.food[j + 1]} = `
+        }    
+};
+
+foodOrdered = () =>{
+        return console.log (`You ordered:${this.food[i][i]} and ${this.drinks[i][i]}. The cost for this order
+        will be ${this.food[i][i] + this.drinks[i][i]}`) 
+       }
+    
+coffeeShop (foodOrdered());
+
+
+
+
+// let order = '';
+// let cost = 0;
+// for (let i = 0; i < drinks.length; i++){
+//     console.log(this.drinks[i])     
+// };
+
+// totalOrder = () => {
 //     return console.log (`Your order is ${this.food[0].currency[0].toFixed(2)}`);
 // }
 // coffeeShop.totalOrder()
@@ -199,9 +221,7 @@ food:
     Cake Slice - £3.50
 ],*/
 
-// for (let i = 0; i < coffeeShop.length; i++){
-//             console.log(coffeeShop[i])     
-//     };
+
 
 // let orders() {
 //     drinksOrders: 

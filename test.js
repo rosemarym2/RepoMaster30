@@ -53,3 +53,56 @@ if (num == reverseStringNum) {
 //     console.log("£7.50")
 // };
 
+
+
+// drinksPrices = [
+//     ["Latte", "Mocha", "Flat white"],
+//     [3.10, 3.20, 3.65 ]
+//    ],
+
+//    foodPrices = [
+//     ["Chips", "Salad", "Sandwich"],
+//     [2.50, 4.80, 3.25 ]
+
+//    ],
+
+//    foodOrdered = () =>{
+//     return console.log (`You ordered:${this.foodPrices[0][0]} and ${this.drinksPrices[0][0]}. The cost for this order
+//     will be ${this.foodPrices[1][0] + this.drinksPrices[1][0]}`) 
+//    }
+
+// coffeeshop.foodOrdered()
+
+let coffeeShop = {
+    branch: 'Costa',
+    drinks: ['Coffee', 2.50, 'Tea', 1.50, 'Hot Chocolate', 3],
+    food: ['Croissant', 3.50, 'Sandwich', 2],
+    drinksOrdered(drink){
+        let order = ''
+        let cost = 0
+        for(let i = 0; i < drink.length; i++){
+            for(let j = 0; j < this.drinks.length; j++){
+                if(drink[i] === this.drinks[j]){
+                    cost += this.drinks[j + 1]
+                    order = order + ` = ${drink[i]} £${this.drinks[j + 1]} = `
+                }
+            }
+        }
+        return `Drink  ${order}\nCost  -  £${cost}\n`
+    },
+    foodOrdered(food){
+        let order = ''
+        let cost = 0
+        for(let i = 0; i < food.length; i++){
+            for(let j = 0; j < this.food.length; j++){
+                if(food[i] === this.food[j]){
+                    cost += this.food[j + 1]
+                    order = order + ` = ${food[i]} £${this.food[j + 1]} = `
+                }
+            }
+        }
+        return `Food  ${order}\nCost  -  £${cost}\n`
+    }
+}
+
+console.log(coffeeShop.foodOrdered(['Croissant', 'Sandwich']), coffeeShop.drinksOrdered(['Coffee', 'Tea']))
